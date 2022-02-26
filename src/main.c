@@ -35,7 +35,8 @@ void cdc_task(void* params);
 int main()
 {
   board_init();
-  
+  usb_serial_init(); // get the serial number of the pico board (really the RUID of the flash device)
+
   // Create a task for tinyusb device stack
   (void) xTaskCreate( usb_device_task, "usbd", USBD_STACK_SIZE, NULL, configMAX_PRIORITIES-2, NULL);
 
