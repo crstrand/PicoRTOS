@@ -11,11 +11,6 @@
 #include "usb_descriptors.h"
 #include "hardware/uart.h"
 #include "hardware/irq.h"
-
-#define UART_ID uart0
-#define POLLED_UART_RX
-#define BUFFERSIZE 128
-
 #include "get_serial.h"
 
 #include "FreeRTOS.h"

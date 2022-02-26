@@ -21,7 +21,6 @@ pico_sdk_init()
 add_executable(${PROJECT_NAME} 
     src/main.c
     src/usb_descriptors.c
-    src/filter.c
     src/get_serial.c
     src/freertos_hook.c
     )
