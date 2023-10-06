@@ -1,15 +1,4 @@
-#include <stdio.h>
-#include "pico/stdlib.h"
-
-#include "bsp/board.h"
-#include "tusb.h"
-
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-#include "semphr.h"
-#include "timers.h"
-
+#include "picoRTOS.h"
 static QueueHandle_t xQueue = NULL;
 static SemaphoreHandle_t mutex;
 
